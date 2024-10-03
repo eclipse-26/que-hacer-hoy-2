@@ -1,0 +1,23 @@
+.item__icon{
+    &:hover{
+
+        cursor: pointer;
+    }
+
+    &.item__icon--check{
+        &:hover{
+            & .icon{
+                color: var(--color-confirm);
+            }
+        }        
+    }
+
+    &.item__icon--delete{
+        &:hover{
+            & .icon{
+                color: var(--color-cancel);
+            }
+        }
+        
+    }
+} 
