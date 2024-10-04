@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "¿Qué Hacer Hoy?",
+  "name": "¿Qué Hacer Hoy?",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "react192.png",
+      "src": "que-hacer-hoy_icono-app-192px.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "react512.png",
+      "src": "que-hacer-hoy_icono-app.png",
       "type": "image/png",
       "sizes": "512x512"
     }

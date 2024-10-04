@@ -1,5 +1,5 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext/TodoContext';
+import { TodoContext } from '../TodoContext';
 
 function TodoSearch(){
 
@@ -11,7 +11,9 @@ function TodoSearch(){
     value={searchValue}
     onChange={(e)=>{
       setSearchValue(e.target.value)
-    }}/>
+    }}
+    className='border w-full rounded-lg px-2 py-1'
+    />
   ) 
 }
 

@@ -1,6 +1,5 @@
 import { ReactComponent as CheckSVG} from "./check.svg"
 import { ReactComponent as DeleteSVG} from "./delete.svg"
-import "./TodoIcon.css"
 
 const iconsTypes = {
     "check": (color) => <CheckSVG className="icon" color={color}/>,
@@ -9,7 +8,7 @@ const iconsTypes = {
 
 function TodoIcon({ type, color, clickFuntion }){
     return (
-        <span className={`item__icon item__icon--${type}`} onClick={clickFuntion}>
+        <span className={`item__icon item__icon--${type} cursor-pointer`} onClick={clickFuntion}>
             {iconsTypes[type](color)}
         </span>
     )

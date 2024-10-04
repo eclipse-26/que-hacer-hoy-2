@@ -1,51 +1,9 @@
-*{
-  margin: 0;
-  padding: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, .root {
+  @apply h-full;
 }
 
-@supports (font-variation-settings: normal) {
-  @font-face {
-    font-family: "JetBrains Mono";
-    src: url("Fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf") format(woff2) tech(variations);  /* Sintaxis moderna */
-    font-weight: 100 800;
-    font-style: 0 1;
-  }
-}
 
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("Fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf") format("truetype");
-  font-weight: 400;
-}
-
-:root {
-  --color-primary: #FF5C00;
-  --color-secundary: #FFB800;
-  --color-tertiary: #0094FF;
-  --color-dark: #1D1D1D;
-  --color-light: #E0E0E0;
-  --color-light-40: #696969;
-  --color-light-80: #373737;
-  --color-confirm: #80cf18;
-  --color-confirm-50: rgba(199, 255, 128, .5);
-  --color-cancel: #FF5959;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 18px;
-  color: var(--color-dark);
-}
-
-.root{
-  background-color: var(--color-light);
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 4rem;
-}
-
-@media screen and (max-width: 1000px) {
-  .root{
-    flex-direction: column;
-    justify-content: center;
-  }
-}
