@@ -1,7 +1,7 @@
 import React from "react";
 import { IoMdAdd } from "react-icons/io";
 
-function CreateTodoButton(setOpenModal){
+function CreateTodoButton({setOpenModal}){
 
   return (
     <button onClick={()=>{

@@ -18,7 +18,8 @@ function Modal({children, setOpenModal}){
                     
                 {children}
             </div>
-        </div>
+        </div>,
+        document.getElementById("modal")
     )
 }
 
