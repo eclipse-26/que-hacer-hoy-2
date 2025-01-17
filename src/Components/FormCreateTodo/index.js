@@ -1,10 +1,6 @@
 import React from "react";
-import { TodoContext } from "../TodoContext";
 
-function FormCreateTodo(){
-
-    const {setOpenModal, addTodo} = React.useContext(TodoContext)
-
+function FormCreateTodo({setOpenModal, addTodo}){
     const onSubmit = (e) =>{
             e.preventDefault();
             const newTodo = document.getElementById("new__todo").value;

@@ -1,9 +1,7 @@
 import React from "react";
-import { useLocalStorage } from "../../CustomHooks/useLocalStorage";
+import { useLocalStorage } from "./useLocalStorage";
 
-const TodoContext = React.createContext();
-
-function TodoProvider( {children} ){
+function useTodos(){
 
     const defaultTodos = [
         { text: "Revisar Freelance", completed: true},
@@ -57,7 +55,7 @@ function TodoProvider( {children} ){
       }
 
     return(
-        <TodoContext.Provider value={{
+        {
             loading,
             error,
             completedTodos,
@@ -70,10 +68,8 @@ function TodoProvider( {children} ){
             addTodo,
             openModal,
             setOpenModal,
-        }}>
-            {children}
-        </TodoContext.Provider>
+        }
     );
 }
 
-export { TodoContext, TodoProvider };
+export { useTodos };

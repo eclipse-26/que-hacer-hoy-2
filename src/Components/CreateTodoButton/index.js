@@ -1,10 +1,7 @@
 import React from "react";
-import { TodoContext } from "../TodoContext";
 import { IoMdAdd } from "react-icons/io";
 
-function CreateTodoButton(){
-
-  const {setOpenModal} = React.useContext(TodoContext)
+function CreateTodoButton(setOpenModal){
 
   return (
     <button onClick={()=>{

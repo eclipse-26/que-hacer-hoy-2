@@ -1,10 +1,6 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
-import { IoIosAdd } from 'react-icons/io';
 
-function TodoCounter(){
-
-    const {completedTodos, totalTodos} = React.useContext(TodoContext);
+function TodoCounter({completedTodos, totalTodos}){
 
     return(
         completedTodos === totalTodos && totalTodos !== 0 ?
